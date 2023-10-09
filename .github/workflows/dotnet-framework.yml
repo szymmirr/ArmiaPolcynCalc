@@ -32,4 +32,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: ArmiaPolcynCalc-artifact
-        path: WindowsFormsApplication1\obj
+        path: WindowsFormsApplication1\bin
