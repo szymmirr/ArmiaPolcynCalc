@@ -25,11 +25,8 @@ jobs:
     - name: Build solution
       run: msbuild WindowsFormsApplication1.sln /p:Configuration=Release /p:DeployOnBuild=true
 
-    - name: Look at folder
-      run: ls
-
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
         name: ArmiaPolcynCalc-artifact
-        path: WindowsFormsApplication1\bin
+        path: WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe
